@@ -1,0 +1,136 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+body {
+  height: 100%;
+  background-color: lightcyan;
+}
+
+header,
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(184, 134, 204);
+  text-align: center;
+}
+
+main {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0px;
+}
+
+.container > div {
+  background-color: rgb(86, 155, 179);
+  height: 180px;
+  width: 25%;
+  float: left;
+  border: solid 1px black;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.titulo {
+  font-weight: bold;
+  color: rgb(61, 60, 60);
+  font-size: 30px;
+}
+
+p {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.contacto > p {
+  color: rgb(61, 60, 60);
+  font-weight: bold;
+  font-size: 15px;
+  margin: 10px;
+  padding-top: 10px;
+}
+
+.hobbies {
+  color: white;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 10px;
+}
+.hobbies > li {
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  text-align: left;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border: solid 2px black;
+}
+
+@media screen and (max-width: 1024px) {
+  .container > div {
+    width: 50%;
+    height: 210px;
+    border: solid 2px black;
+  }
+
+  img {
+    border: inset 3px black;
+    border-radius: 4px;
+    height: 125px;
+    width: 125px;
+  }
+
+  p {
+    font-size: 30px;
+    margin: 15px;
+  }
+
+  .hobbies {
+    font-size: 30px;
+  }
+  .hobbies > li {
+    font-size: 25px;
+  }
+
+  .contacto > p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container > div {
+    width: 100%;
+    border: solid 3px black;
+    height: 250px;
+  }
+
+  img {
+    border: inset 5px black;
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+  }
+
+  p {
+    font-size: 30px;
+    margin: 10px;
+  }
+}
