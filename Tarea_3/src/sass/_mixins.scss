@@ -1,0 +1,31 @@
+@import "colores";
+
+@mixin init_config {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+@mixin screen_config {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@mixin header-footer-format {
+  height: 80px;
+  width: 100%;
+  background-color: $color-header-footer;
+  text-align: center;
+}
+
+@mixin tablet {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin celular {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
