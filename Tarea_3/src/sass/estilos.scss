@@ -1,0 +1,131 @@
+@import "colores";
+@import "mixins";
+
+html {
+  @include init_config;
+}
+
+body {
+  @include init_config;
+  height: 100%;
+  background-color: $color-body;
+}
+
+header {
+  @include header-footer-format;
+  font-weight: bold;
+  color: $header-footer-textcolor;
+  font-size: 30px;
+}
+
+footer {
+  @include header-footer-format;
+  > p {
+    color: $header-footer-textcolor;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+    padding-top: 10px;
+
+    @include tablet {
+      font-size: 20px;
+    }
+  }
+}
+
+nav {
+  > a {
+    font-size: 20px;
+  }
+}
+
+main {
+  @include screen_config;
+}
+
+.container {
+  width: 100%;
+  padding: 0px;
+  > div {
+    background-color: $color-secciones;
+    height: 180px;
+    width: 25%;
+    float: left;
+    border: solid 1px $black-color;
+    box-sizing: border-box;
+    text-align: center;
+
+    @include tablet {
+      width: 50%;
+      height: 210px;
+      border: solid 2px $black-color;
+    }
+
+    @include celular {
+      width: 100%;
+      height: 250px;
+      border: solid 3px $black-color;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+p {
+  color: $white-color;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px;
+
+  @include tablet {
+    font-size: 30px;
+    margin: 15px;
+  }
+
+  @include celular {
+    font-size: 30px;
+    margin: 10px;
+  }
+}
+
+.hobbies {
+  color: $white-color;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+
+  @include tablet {
+    font-size: 30px;
+  }
+  > li {
+    @extend .hobbies;
+    text-align: left;
+    @include tablet {
+      font-size: 25px;
+    }
+  }
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border: solid 2px $black-color;
+
+  @include tablet {
+    border: inset 3px $black-color;
+    border-radius: 4px;
+    height: 125px;
+    width: 125px;
+  }
+
+  @include celular {
+    border: inset 5px $black-color;
+    border-radius: 8px;
+    height: 150px;
+    width: 150px;
+  }
+}
