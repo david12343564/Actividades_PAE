@@ -1,0 +1,22 @@
+{
+  "name": "tarea_4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "sass src/sass:assets/dist/css --no-source-map",
+    "estilos:dev": "sass src/sass:assets/dist/css --watch --no-source-map",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.3.4",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.1",
+    "nodemon": "^2.0.20",
+    "sass": "^1.58.3"
+  }
+}
