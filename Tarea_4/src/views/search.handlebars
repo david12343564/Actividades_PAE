@@ -1,0 +1,21 @@
+<h1>¡Noticias Encontradas!</h1>
+
+{{#each news}}
+  <table>
+    <tr>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Autor</th>
+    </tr>
+    <tr>
+      <td class="imagen"><img
+          src="{{this.urlToImage}}"
+          alt="{{this.title}}"
+        /></td>
+      <td><a href="{{this.url}}" target="_blank">{{this.title}}</a></td>
+      <td><h3>{{this.author}}</h3></td>
+    </tr>
+  </table>
+  <br />
+  <br />
+{{/each}}
