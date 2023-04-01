@@ -1,0 +1,51 @@
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    
+    
+}
+
+.skills-info{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.skill-item{
+    flex: 1 1 50%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skill-img{
+    margin-bottom: 10px;
+    
+}
+
+img{
+    width: 100px;
+
+    padding: 5px;
+    height: 100px;
+    border: 3px solid #333;
+    border-radius: 5px;
+}
+
+.skill-det p{
+    font-weight:500;
+}
+
+
