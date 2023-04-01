@@ -1,0 +1,48 @@
+header{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    
+}
+
+.ed_info{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.ed_item{
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+
+.ed_img{
+    margin-bottom: 10px;
+    
+}
+
+img{
+    width: 45%;
+    padding: 5px;
+    height: auto;
+    border: 5px solid #333;
+}
+
+.ed-det p{
+    font-weight:500;
+}
+
+
